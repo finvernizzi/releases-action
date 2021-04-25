@@ -1,13 +1,13 @@
 name: 'SDK releases documentation'
 description: 'Generates metainfo related to SDK releases'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  path:  # id of input
+    description: 'Path where releases are placed'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'releases'
+#outputs:
+#  time: # id of output
+#    description: 'The time we greeted you'
 runs:
   using: 'node12'
   main: 'index.js'
